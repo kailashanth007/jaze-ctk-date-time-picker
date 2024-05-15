@@ -146,8 +146,8 @@
       transition-duration: 0.3s;
       position: relative;
       width: 100%;
-      height: 42px;
-      min-height: 42px;
+      height: 22px;
+      min-height: 22px;
       padding-left: 12px;
       padding-right: 44px;
       font-weight: 400;
