@@ -1,6 +1,6 @@
 {
   "name": "jaze-ctk-date-time-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A vue component for select date & time",
   "author": "Kailashnath A <kailashnath.007@gmail.com>",
   "scripts": {
@@ -34,7 +34,6 @@
     "@vue/cli-plugin-unit-jest": "^3.5.1",
     "@vue/cli-service": "^3.2.2",
     "@vue/eslint-config-standard": "^4.0.0",
-    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -85,7 +84,7 @@
     "timepicker"
   ],
   "license": "MIT",
-  "main": "dist/vue-ctk-date-time-picker.common.js",
+  "main": "dist/jaze-ctk-date-time-picker.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kailashanth007/jaze-ctk-date-time-picker.git"

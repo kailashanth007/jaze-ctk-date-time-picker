@@ -4,7 +4,7 @@ module.exports = function VueCtkDateTimePicker () {
   this.addPlugin({
     ssr: false,
     src: resolve(__dirname, 'plugin.js'),
-    fileName: 'vue-ctk-date-time-picker.js'
+    fileName: 'jaze-ctk-date-time-picker.js'
   })
 }
 

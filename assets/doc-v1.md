@@ -1,6 +1,6 @@
-![vue-ctk-date-time-picker](./logo_sticky.png)
+![jaze-ctk-date-time-picker](./logo_sticky.png)
 
-# vue-ctk-date-time-picker
+# jaze-ctk-date-time-picker
 
 > Documention for v1.*
 
