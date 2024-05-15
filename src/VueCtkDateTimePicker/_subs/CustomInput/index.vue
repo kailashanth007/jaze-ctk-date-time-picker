@@ -65,7 +65,7 @@
     props: {
       isFocus: { type: Boolean, default: false },
       value: { type: [String, Object], required: false, default: null },
-      label: { type: String, default: 'Select date & time' },
+      label: { type: String, default: 'Select Date & Time' },
       noLabel: { type: Boolean, default: false },
       hint: { type: String, default: null },
       errorHint: { type: Boolean, default: null },
