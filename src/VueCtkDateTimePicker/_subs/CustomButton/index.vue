@@ -33,7 +33,7 @@
   export default {
     name: 'CustomButton',
     props: {
-      color: { type: String, default: 'dodgerblue' },
+      color: { type: String, default: 'var(--color-400)' },
       dark: { type: Boolean, default: false },
       withBorder: { type: Boolean, default: false },
       hover: { type: Boolean, default: false },
@@ -65,7 +65,6 @@
     border: 1px solid transparent;
     border-radius: 4px;
     height: 30px;
-    font-size: 13px;
     outline: none;
     cursor: pointer;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -78,11 +77,11 @@
       position: relative;
       -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
       transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-      fill: dodgerblue;
+      fill: 'var(--color-400)';
     }
     .custom-button-effect {
       position: absolute;
-      background: dodgerblue;
+      background: 'var(--color-400)';
       top: 0;
       left: 0;
       bottom: 0;

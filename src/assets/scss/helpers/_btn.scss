@@ -10,11 +10,11 @@
   outline: none;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: dodgerblue;
+  background-color: 'var(--color-400)';
   color: white;
   font-weight: 500;
   &:hover {
-    background-color: darken(dodgerblue, 10%);
+    background-color: darken('var(--color-400)', 10%);
     box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
       0 2px 4px 0 rgba(232, 237, 250, 0.5);
   }

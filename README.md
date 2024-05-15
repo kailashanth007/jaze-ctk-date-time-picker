@@ -98,11 +98,11 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 | v-model                     | String            | yes      | -                           |
 | format                      | String            | no       | 'YYYY-MM-DD hh:mm a'        |
 | formatted                   | String            | no       | 'llll' (momentjs format)    |
-| label                       | String            | no       | Select date & time          |
+| label                       | String            | no       | Select Date & Time          |
 | hint (1)                    | String            | no       | -                           |
 | error (2)                   | Boolean           | no       | false                       |
-| color (3)                   | String (hex)      | no       | dodgerblue                  |
-| button-color (4)            | String (hex)      | no       | #00C853                     |
+| color (3)                   | String (hex)      | no       | 'var(--color-400)'          |
+| button-color (4)            | String (hex)      | no       | 'var(--color-400)'          |
 | position                    | String            | no       | null                        |
 | locale (5)                  | String            | no       | Browser Locale              |
 | persistent                  | Boolean           | no       | false                       |

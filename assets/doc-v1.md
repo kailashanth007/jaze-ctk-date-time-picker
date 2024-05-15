@@ -9,10 +9,10 @@
 | Props      | Type       | Required | Default    |
 |------------|------------|----------|------------|
 | v-model    | String/Int | yes     | -          |
-| label      | String     | no    | Select date & time |
+| label      | String     | no    | Select Date & Time |
 | hint (1)       | text       | no       | -         |
 | error-hint (2) | Boolean    | no      | false     |
-| color (3)     | String (hex) | no    | dodgerblue |
+| color (3)     | String (hex) | no    | 'var(--color-400)' |
 | minute-interval | Int | no    | 1    |
 | formatted   | string | no    | 'llll' (momentjs format) |
 | format   | string | no      | - |

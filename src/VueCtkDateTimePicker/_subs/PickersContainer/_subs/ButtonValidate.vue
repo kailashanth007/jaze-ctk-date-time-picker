@@ -118,11 +118,11 @@
         position: relative;
         -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
         transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-        fill: #00C853;
+        fill: 'var(--color-400)';
       }
       .datepicker-button-effect {
         position: absolute;
-        background: #00C853;
+        background: 'var(--color-400)';
         top: 0;
         left: 0;
         bottom: 0;
@@ -151,10 +151,10 @@
           margin-right: 10px;
         }
         .datepicker-button-content {
-          color: dodgerblue;
+          color: 'var(--color-400)';
         }
         .datepicker-button-effect {
-          background: dodgerblue;
+          background: 'var(--color-400)';
         }
       }
       &.validate {

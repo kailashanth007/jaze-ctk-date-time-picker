@@ -4,8 +4,8 @@ import CustomInput from '@/VueCtkDateTimePicker/_subs/CustomInput'
 describe('CustomInput.vue', () => {
   it('renders label when passed (input & label)', () => {
     const wrapper = shallowMount(CustomInput)
-    expect(wrapper.find('label').text()).toMatch('Select date & time')
-    expect(wrapper.find('input').attributes('placeholder')).toMatch('Select date & time')
+    expect(wrapper.find('label').text()).toMatch('Select Date & Time')
+    expect(wrapper.find('input').attributes('placeholder')).toMatch('Select Date & Time')
     wrapper.setProps({ label: 'the label' })
     expect(wrapper.find('label').text()).toMatch('the label')
     expect(wrapper.find('input').attributes('placeholder')).toMatch('the label')

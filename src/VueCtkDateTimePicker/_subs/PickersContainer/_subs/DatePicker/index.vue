@@ -411,7 +411,7 @@
         .datepicker-day-effect {
           margin: auto;
           opacity: 0.6;
-          background: dodgerblue;
+          background: 'var(--color-400)';
           transform: scale(0);
         }
         .datepicker-today {

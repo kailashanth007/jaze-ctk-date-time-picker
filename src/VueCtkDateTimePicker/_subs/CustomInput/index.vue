@@ -146,8 +146,8 @@
       transition-duration: 0.3s;
       position: relative;
       width: 100%;
-      height: 22px;
-      min-height: 22px;
+      min-height: 20px;
+      line-height: 1.15;
       padding-left: 12px;
       padding-right: 44px;
       font-weight: 400;
@@ -197,10 +197,10 @@
     }
     &.is-focused {
       .field-input {
-        border-color: dodgerblue;
+        border-color: 'var(--color-400)';
       }
       .field-label {
-        color: dodgerblue;
+        color: 'var(--color-400)';
       }
     }
     &.is-disabled {

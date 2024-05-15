@@ -26,7 +26,7 @@ describe('VueCtkDateTimePicker/CustomInput', () => {
       const { type, readonly, placeholder } = input.attributes()
       expect(type).toEqual('text')
       expect(readonly).toBeTruthy()
-      expect(placeholder).toEqual('Select date & time')
+      expect(placeholder).toEqual('Select Date & Time')
     })
 
     it('should have the id from the attributes', () => {

@@ -463,7 +463,7 @@
         &-effect {
           position: absolute;
           opacity: 0.6;
-          background: dodgerblue;
+          background: 'var(--color-400)';
           height: 24px;
           width: 70%;
           top: 2px;

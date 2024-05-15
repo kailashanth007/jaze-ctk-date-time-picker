@@ -6,7 +6,7 @@ export default {
   noLabel: { type: Boolean, default: false },
   hint: { type: String, default: null },
   error: { type: Boolean, default: null },
-  color: { type: String, default: 'dodgerblue' },
+  color: { type: String, default: 'var(--color-400)' },
   buttonColor: { type: String, default: null },
   dark: { type: Boolean, default: false },
   overlay: { type: Boolean, default: false },
