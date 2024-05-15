@@ -158,7 +158,6 @@
       font-size: 14px;
       z-index: 0;
       &.no-clear-button {
-        padding: 0 12px;
       }
     }
     &-clear-button {
