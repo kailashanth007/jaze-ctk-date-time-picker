@@ -1,35 +1,33 @@
-<!-- ![vue-ctk-date-time-picker](./assets/logo_sticky.png) -->
+<!-- ![jaze-ctk-date-time-picker](./assets/logo_sticky.png) -->
 
 # VueCtkDateTimePicker
 
 > A vue component for select dates (range mode available) & time
 
-[![Build Status](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master.svg?style=shield)](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master)
-
 This documentation is for v2.\*. Find v1 documentation [here](./assets/doc-v1.md)
 
-![vue-ctk-date-time-picker](./assets/illu-animated.gif)
+![jaze-ctk-date-time-picker](./assets/illu-animated.gif)
 
 ## Dark mode
 
-![vue-ctk-date-time-picker](./assets/illu-animated-dark.gif)
+![jaze-ctk-date-time-picker](./assets/illu-animated-dark.gif)
 
 # Demo
 
-[Enjoy](https://chronotruck.github.io/vue-ctk-date-time-picker/)
+[Enjoy](https://github.com/kailashanth007/jaze-ctk-date-time-picker/)
 
 # Installation
 
 Yarn
 
 ```bash
-yarn add vue-ctk-date-time-picker
+yarn add jaze-ctk-date-time-picker
 ```
 
 NPM
 
 ```bash
-npm i --save vue-ctk-date-time-picker
+npm i --save jaze-ctk-date-time-picker
 ```
 
 # Usage
@@ -37,8 +35,8 @@ npm i --save vue-ctk-date-time-picker
 ## ES6 Modules / CommonJS
 
 ```js
-import VueCtkDateTimePicker from 'vue-ctk-date-time-picker';
-import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css';
+import VueCtkDateTimePicker from 'jaze-ctk-date-time-picker';
+import 'jaze-ctk-date-time-picker/dist/jaze-ctk-date-time-picker.css';
 
 Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 ```
@@ -53,7 +51,7 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 <link
   rel="stylesheet"
   type="text/css"
-  href="${YOUR_PATH}/vue-ctk-date-time-picker.css"
+  href="${YOUR_PATH}/jaze-ctk-date-time-picker.css"
 />
 
 <div id="app">
@@ -62,12 +60,12 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
 <script
-  src="${YOUR_PATH}/vue-ctk-date-time-picker.umd.min.js"
+  src="${YOUR_PATH}/jaze-ctk-date-time-picker.umd.min.js"
   charset="utf-8"
 ></script>
 
 <script type="text/javascript">
-  Vue.component('vue-ctk-date-time-picker', window['vue-ctk-date-time-picker']);
+  Vue.component('jaze-ctk-date-time-picker', window['jaze-ctk-date-time-picker']);
   new Vue({
     el: '#app',
     data() {

@@ -26,21 +26,21 @@
           <a
             class="lm-btn lm-btn-dark lm-mr-2"
             target="_blank"
-            href="https://github.com/chronotruck/vue-ctk-date-time-picker"
+            href="https://github.com/kailashanth007/jaze-ctk-date-time-picker"
           >
             Github
           </a>
           <a
             class="lm-btn lm-btn-dark lm-mr-2"
             target="_blank"
-            href="https://github.com/chronotruck/vue-ctk-date-time-picker/releases"
+            href="https://github.com/kailashanth007/jaze-ctk-date-time-picker/releases"
           >
             Changelog
           </a>
           <a
             class="lm-btn lm-btn-danger"
             target="_blank"
-            href="https://www.npmjs.com/package/vue-ctk-date-time-picker"
+            href="https://www.npmjs.com/package/jaze-ctk-date-time-picker"
           >
             Npm
           </a>
