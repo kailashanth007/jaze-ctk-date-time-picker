@@ -23118,7 +23118,7 @@ var CustomButtonvue_type_template_id_991b0432_scoped_true_bindings_color_props_d
   props: {
     color: {
       type: String,
-      default: 'var(--color-400)'
+      default: 'dodgerblue'
     },
     dark: {
       type: Boolean,
@@ -23192,7 +23192,7 @@ CustomButtonvue_type_script_lang_js.__scopeId = "data-v-991b0432"
     },
     label: {
       type: String,
-      default: 'Select date & time'
+      default: 'Select Date & Time'
     },
     noLabel: {
       type: Boolean,
@@ -26076,7 +26076,7 @@ var utils_getDefaultLocale = function getDefaultLocale() {
   },
   color: {
     type: String,
-    default: 'var(--color-400)'
+    default: 'dodgerblue'
   },
   buttonColor: {
     type: String,

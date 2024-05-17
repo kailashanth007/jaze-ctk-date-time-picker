@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueCtkDateTimePicker from 'jaze-ctk-date-time-picker'
-import 'vue-ctk-date-time-picker/dist/jaze-ctk-date-time-picker.css'
+import VueCtkDateTimePicker from 'vue-ctk-date-time-picker'
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
 
 Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker)

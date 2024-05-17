@@ -1,33 +1,35 @@
-<!-- ![jaze-ctk-date-time-picker](./assets/logo_sticky.png) -->
+<!-- ![vue-ctk-date-time-picker](./assets/logo_sticky.png) -->
 
 # VueCtkDateTimePicker
 
 > A vue component for select dates (range mode available) & time
 
+[![Build Status](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master.svg?style=shield)](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master)
+
 This documentation is for v2.\*. Find v1 documentation [here](./assets/doc-v1.md)
 
-![jaze-ctk-date-time-picker](./assets/illu-animated.gif)
+![vue-ctk-date-time-picker](./assets/illu-animated.gif)
 
 ## Dark mode
 
-![jaze-ctk-date-time-picker](./assets/illu-animated-dark.gif)
+![vue-ctk-date-time-picker](./assets/illu-animated-dark.gif)
 
 # Demo
 
-[Enjoy](https://github.com/kailashanth007/jaze-ctk-date-time-picker/)
+[Enjoy](https://chronotruck.github.io/vue-ctk-date-time-picker/)
 
 # Installation
 
 Yarn
 
 ```bash
-yarn add jaze-ctk-date-time-picker
+yarn add vue-ctk-date-time-picker
 ```
 
 NPM
 
 ```bash
-npm i --save jaze-ctk-date-time-picker
+npm i --save vue-ctk-date-time-picker
 ```
 
 # Usage
@@ -35,8 +37,8 @@ npm i --save jaze-ctk-date-time-picker
 ## ES6 Modules / CommonJS
 
 ```js
-import VueCtkDateTimePicker from 'jaze-ctk-date-time-picker';
-import 'jaze-ctk-date-time-picker/dist/jaze-ctk-date-time-picker.css';
+import VueCtkDateTimePicker from 'vue-ctk-date-time-picker';
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css';
 
 Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 ```
@@ -51,7 +53,7 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 <link
   rel="stylesheet"
   type="text/css"
-  href="${YOUR_PATH}/jaze-ctk-date-time-picker.css"
+  href="${YOUR_PATH}/vue-ctk-date-time-picker.css"
 />
 
 <div id="app">
@@ -60,12 +62,12 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
 <script
-  src="${YOUR_PATH}/jaze-ctk-date-time-picker.umd.min.js"
+  src="${YOUR_PATH}/vue-ctk-date-time-picker.umd.min.js"
   charset="utf-8"
 ></script>
 
 <script type="text/javascript">
-  Vue.component('jaze-ctk-date-time-picker', window['jaze-ctk-date-time-picker']);
+  Vue.component('vue-ctk-date-time-picker', window['vue-ctk-date-time-picker']);
   new Vue({
     el: '#app',
     data() {
@@ -79,15 +81,25 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 
 Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQWNzQ).
 
-## Use custom element to trigger the component
-
+## Use custom element to trigger the component (using [Slots api](https://v3.vuejs.org/api/directives.html#v-slot))
 ```html
-<VueCtkDateTimePicker :no-value-to-custom-elem="(true|false)" />
-  ...
-  <input type="text" />
-  ... or
-  <button type="button">Label</button>
-  ...
+<VueCtkDateTimePicker>
+  <template v-slot="{ dateFormatted, toggleDatePicker, isOpen, close }">
+    ...
+    <input
+      type="text"
+      :value="dateFormatted"
+      @focus="toggleDatePicker(true)"
+    >
+    ... or
+    <button
+      type="button"
+      @click="toggleDatePicker(true)"
+    >
+      {{ dateFormatted }}
+    </button>
+    ...
+  </template>
 </VueCtkDateTimePicker>
 ```
 
@@ -98,11 +110,11 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 | v-model                     | String            | yes      | -                           |
 | format                      | String            | no       | 'YYYY-MM-DD hh:mm a'        |
 | formatted                   | String            | no       | 'llll' (momentjs format)    |
-| label                       | String            | no       | Select Date & Time          |
+| label                       | String            | no       | Select date & time          |
 | hint (1)                    | String            | no       | -                           |
 | error (2)                   | Boolean           | no       | false                       |
-| color (3)                   | String (hex)      | no       | 'var(--color-400)'          |
-| button-color (4)            | String (hex)      | no       | 'var(--color-400)'          |
+| color (3)                   | String (hex)      | no       | dodgerblue                  |
+| button-color (4)            | String (hex)      | no       | #00C853                     |
 | position                    | String            | no       | null                        |
 | locale (5)                  | String            | no       | Browser Locale              |
 | persistent                  | Boolean           | no       | false                       |
@@ -112,9 +124,8 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 | only-date                   | Boolean           | no       | false                       |
 | no-label                    | Boolean           | no       | false                       |
 | no-header                   | Boolean           | no       | false                       |
-| no-value-to-custom-elem (6) | Boolean           | no       | false                       |
-| min-date (7)                | String            | no       | -                           |
-| max-date (7)                | String            | no       | -                           |
+| min-date (6)                | String            | no       | -                           |
+| max-date (6)                | String            | no       | -                           |
 | no-weekends-days            | Boolean           | no       | false                       |
 | auto-close                  | Boolean           | no       | false                       |
 | inline                      | Boolean           | no       | false                       |
@@ -127,16 +138,16 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 | button-now-translation      | String            | no       | 'Now'                       |
 | no-button-now               | Boolean           | no       | false                       |
 | first-day-of-week           | Int (0 to 7)      | no       | -                           |
-| disabled-dates (8)          | Array`<string>`   | no       | []                          |
-| disabled-hours (9)          | Array`<string>`   | no       | -                           |
+| disabled-dates (7)          | Array`<string>`   | no       | []                          |
+| disabled-hours (8)          | Array`<string>`   | no       | -                           |
 | shortcut                    | String            | no       | -                           |
-| custom-shortcuts (10)       | Array`<object>`   | no       | -                           |
-| disabled-weekly (11)        | Array`<integer>`  | no       | []                          |
-| no-keyboard (12)            | Boolean           | no       | false                       |
-| right (13)                  | Boolean           | no       | false                       |
+| custom-shortcuts (9)       | Array`<object>`   | no       | -                           |
+| disabled-weekly (10)        | Array`<integer>`  | no       | []                          |
+| no-keyboard (11)            | Boolean           | no       | false                       |
+| right (12)                  | Boolean           | no       | false                       |
 | noClearButton               | Boolean           | no       | false                       |
 | behaviour                   | Object            | no       | [See behaviour](#Behaviour) |
-| id (14)                     | String            | no       | undefined                   |
+| id (13)                     | String            | no       | undefined                   |
 
 (1) hint : Is a text that replaces the label/placeholder (Ex : Error designation)
 
@@ -148,15 +159,13 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 
 (5) locale : Default value is the locale of the browser - Ex : Set `locale="fr"` to force to French language
 
-(6) no-value-to-custom-elem : No value will set to your elem (you can get the formatted value with @formatted-value event)
+(6) min-date && max-date should be in the same format as property format specified. If format not set - it is set to 'YYYY-MM-DD hh:mm a' by default
 
-(7) min-date && max-date should be in the same format as property format specified. If format not set - it is set to 'YYYY-MM-DD hh:mm a' by default
+(7) Disabled-Dates is an Array of dates in 'YYYY-MM-DD' format (ex: `['2018-04-03', '2018-04-07', '2018-04-09']`)
 
-(8) Disabled-Dates is an Array of dates in 'YYYY-MM-DD' format (ex: `['2018-04-03', '2018-04-07', '2018-04-09']`)
+(8) disabled-hours : Must be an Array of hours in 24h format ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
 
-(9) disabled-hours : Must be an Array of hours in 24h format ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
-
-(10) custom-shortcuts - It's an array of objects. Each object represents a single shortcut.
+(9) custom-shortcuts - It's an array of objects. Each object represents a single shortcut.
 
 ```js
 [
@@ -203,13 +212,13 @@ With the `shortcut` property, you can specify a shortcut that's selected by defa
   :shortcut="'thisMonth'"
 ```
 
-(11) disabled-weekly : Days of the week which are disabled every week, in Array format with day index, Sunday as 0 and Saturday as 6: `[0,4,6]`
+(10) disabled-weekly : Days of the week which are disabled every week, in Array format with day index, Sunday as 0 and Saturday as 6: `[0,4,6]`
 
-(12) no-keyboard : Disable keyboard accessibility & navigation
+(11) no-keyboard : Disable keyboard accessibility & navigation
 
-(13) right : add this attribute to align the picker on right
+(12) right : add this attribute to align the picker on right
 
-(14) id : it assign id such as 'passedstring-input' to input help diffrentiate between two date-time-picker on same component.
+(13) id : it assign id such as 'passedstring-input' to input help diffrentiate between two date-time-picker on same component.
 
 > Any additionnal attribute passed to the component will be automatically be binded to the input component. (eg. if you passes a `type` attribute, the `<input>` will receive it).
 
