@@ -23118,7 +23118,7 @@ var CustomButtonvue_type_template_id_991b0432_scoped_true_bindings_color_props_d
   props: {
     color: {
       type: String,
-      default: 'dodgerblue'
+      default: 'var(--color-400)'
     },
     dark: {
       type: Boolean,
@@ -26076,7 +26076,7 @@ var utils_getDefaultLocale = function getDefaultLocale() {
   },
   color: {
     type: String,
-    default: 'dodgerblue'
+    default: 'var(--color-400)'
   },
   buttonColor: {
     type: String,

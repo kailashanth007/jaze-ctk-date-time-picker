@@ -1,6 +1,6 @@
 {
   "name": "jaze-ctk-date-time-picker",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A vue component for select date & time (by Chronotruck)",
   "author": "Louis Mazel <loic.mazuel@chronotruck.com>",
   "scripts": {
